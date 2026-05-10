@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto_hide_alert_banner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100vh;
+            background: #1482ad;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            height: 100px;
+            width: 300px;
+            background: #ff0000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #f1ce0a;
+            border-radius: 15px;
+            position: fixed;
+            top: 10%;
+            transition-duration: 0.3s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Hello World!</h2>
+    </div>
+    
+    <script src="5_auto_hide_alert_banner.js"></script>
+</body>
+</html>

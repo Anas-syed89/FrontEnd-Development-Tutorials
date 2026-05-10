@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Event Handling</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: #000;
+        }
+        
+        .btns {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #007BFF;
+            background: #fdb6b6;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        .parent {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px;
+            border: 2px solid slateblue;
+            padding: 3em;
+        }
+        .child {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #094d09;
+            font-weight: 600;
+            background: #fdb6b6;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        #input {
+            margin: 30px;
+            padding: 10px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            color: #7d8107;
+        }
+
+        .main {
+            margin: 30px;
+            padding: 30px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #444;
+        }
+
+        .main #inputFile {
+            display: none;
+        }
+        .main #btnInput {
+            padding: 10px 20px;
+            font-size: 20px;
+            background: #ebe6e6;
+            color: #368de3;
+            border-radius: 20px;
+            transition-duration: 0.3s;
+            cursor: pointer;
+        }
+
+        .main #btnInput:hover {
+            background: #368de3;
+            color: #ebe6e6;
+        }
+    </style>
+</head>
+<body>
+    <!-- CLICK AND DOUBLE CLICK -->
+    <div class="container">
+        <a href="#" class="btns">Click here</a>
+    </div>
+    <br>
+    <a href="#" class="btns" id="btns">Click Here</a>
+    <div class="parent">
+        <div class="child">Child 1</div>
+        <div class="child">Child 2</div>
+        <div class="child">Child 3</div>
+        <div class="child">Child 4</div>
+        <div class="child">Child 5</div>
+        <div class="child">Child 6</div>
+    </div>
+    <br>
+
+    <!-- INPUT EVENT -->
+    <input type="text" placeholder="Typed" id="input">
+    <br>
+
+    <!-- FILE INPUT EVENT -->
+    <div class="main">
+        <input type="file" id="inputFile">
+        <div id="btnInput">Upload File</div>
+    </div>
+    
+    <script src="6_events_eventHandling.js"></script>
+</body>
+</html>

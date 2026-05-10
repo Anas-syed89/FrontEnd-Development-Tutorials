@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Tables</title>
+</head>
+<body>
+   <table border="2" >
+    <caption>Students Detail</caption>
+    <!-- 
+    thead-> container of heading
+    th-> Table headings
+    tr-> Table rows 
+    td-> data cell
+    colspan Attribute-> horizontal merge means mearging columns
+    rowspan Attribute-> vertical merge means mearging rows
+    -->
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Roll No.</th>
+            <th>Remarks</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Anas</td>
+            <td>001</td>
+            <td>Pass</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Ali</td>
+            <td>002</td>
+            <td>Fail</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Syed Muhammad Ahmed Wasim Ali</td>
+            <td>003</td>
+            <td>Pass</td>
+        </tr>
+        
+        <tr>
+            <td>Sam</td>
+            <td>004</td>
+            <td>Fail</td>
+        </tr>
+    </tbody>
+   </table>
+</body>
+</html>

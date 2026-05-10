@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform_property</title>
+    <style>
+        .container {
+            border: 2px solid brown;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid green;
+        }
+
+        .box1 {
+            background-color: cadetblue;
+            transform: rotate(40deg);
+        }
+
+        .box2 {
+            background-color: salmon;
+            transform: rotate(0.25turn);
+/*0.25turn = 90 degree*/
+        }
+
+        .box3 {
+            background-color: darkgoldenrod;
+           /* transform: rotateX(40deg);
+           transform: rotateY(40deg);
+           */
+           transform: rotateZ(40deg);
+        }
+
+        .box4 {
+            background-color: slategray;
+            transform: scaleY(1.6);
+            /*
+            transform: scale(1.6);
+            transform: scaleX(1.6);
+            */
+        }
+
+        .box5 {
+            background-color: aquamarine;
+            transform: skewY(5deg);
+            /* TRANSALATE means change place */
+            /*
+            transform: skew(5deg);
+            */
+        }
+
+        .box6 {
+            background-color: hotpink;
+            transform: translateX(45%) translateY(100%) skewX(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+        <div class="box box5">box5</div>
+        <div class="box box6">box6</div>
+    </div>
+</body>
+</html>

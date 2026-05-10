@@ -1,0 +1,10 @@
+body{
+    background-color: antiquewhite
+}
+
+h1{ 
+    background-color: azure;
+    color: black;
+    text-align: center;
+    border: 3px dashed yellow;
+}

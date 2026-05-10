@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container {
+            background-color: firebrick;
+            height: 80vh;
+            width: 30vh;
+        }
+
+        .box {
+            width: 35px;
+            height: 45px;
+            /* animation-name: animation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-direction: reverse;
+            animation-play-state: inherit; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: animation 3s ease-in-out 3;
+            animation-fill-mode: backwards;
+
+        }
+
+        @keyframes animation {
+            from {
+                background-color: red;
+            }
+            to {
+                background-color: darkorange;
+                transform: translateX(1000px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Simulation</title>
+    <style>
+
+
+        /* Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #121212; /* dark background */
+        color: #fff;
+    }
+
+    .glassCard {
+        background: rgba(30, 30, 30, 0.7);
+        backdrop-filter: blur(10px);
+        padding: 40px 35px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        width: 350px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .glassCard h2 {
+        margin-bottom: 30px;
+        font-weight: 600;
+        font-size: 24px;
+        color: #e0e0e0;
+    }
+
+    .progressContainer {
+        width: 100%;
+        height: 30px;
+        background: #2a2a2a;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        box-shadow: inset 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .progressBar {
+        width: 0%;
+        height: 100%;
+        background: linear-gradient(90deg, #ff6a00, #ee0979);
+        border-radius: 15px 0 0 15px;
+        /* transition: width 0.3s ease; */
+        position: relative;
+    }
+
+    .progressBar::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 60px;
+        background: rgba(255,255,255,0.2);
+        transform: translateX(-100%);
+    /* animation: shine 1.2s infinite; */
+    }
+/* 
+@keyframes shine {
+    0% { transform: translateX(-100%); }
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(100%); }
+} */
+
+    .percent {
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="glassCard">
+        <h2>Downloading...</h2>
+        <div class="progressContainer">
+            <div class="progressBar" id="progressBar"></div>
+        </div>
+
+        <div class="percent" id="percentText">0%</div>
+    </div>
+    <script src="4_download_simulation.js"></script>
+</body>
+</html>

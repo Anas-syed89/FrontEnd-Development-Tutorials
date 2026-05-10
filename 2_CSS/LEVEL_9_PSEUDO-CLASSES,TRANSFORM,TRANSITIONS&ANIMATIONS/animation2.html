@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: saddlebrown;
+            animation: move 5s 2s infinite;
+        }
+
+        @keyframes move {
+            0% {
+                margin: 0;
+                padding: 0;
+            }
+
+            25% {
+                margin-left: 600px;
+                margin-top: 0;
+                transform: rotate(45deg);
+                background-color: #038690;
+            }
+
+            50% {
+                margin-top: 300px;
+                margin-left: 600px;
+                transform: rotate(-45deg);
+            }
+
+            75% {
+                margin-left: 0;
+                margin-top: 300px;
+                transform: rotate(45deg);
+                background-color: #fff025;
+                border-radius: 50%;
+            }
+
+            100% {
+                margin-left: 0;
+                margin-top: 0;
+            }
+        }
+
+    </style>
+    <title>Animation</title>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav_bar</title>
+    <link rel="stylesheet" href="3_nav_bar.css">
+</head>
+<body>
+
+    <div class="btnMenu" id="btnMenu" onclick="show_navbar()"></div>
+    <div class="sideNav" id="sideNav">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Testimonials</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </div>
+    <script>
+        function show_navbar() {
+            document.getElementById("sideNav").classList.toggle("show")
+            document.getElementById("btnMenu").classList.toggle("show")
+        }
+    </script>
+    <script src="nav_bar.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+    }
+    .main .textBox {
+        width: 40%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: yellowgreen;
+        padding: 0px 10px;
+
+    }
+
+    .main .textBox input {
+        width: 90%;
+        height: 100%;
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .main .textBox button {
+        background-color: transparent;
+        border: none;
+    }
+
+    .main .textBox button img {
+        width: 100px;
+        height: 30px;
+    }
+
+
+</style>
+<body>
+    <section class="main">
+        <div class="textBox">
+            <input type="text" id="txtSearch">
+            <button onclick="search()"><img src="Images/search_button.svg" alt="Images/search_button.svg">
+            </button>
+        </div>
+    </section>
+    <script src="4_search.js"></script>
+</body>
+</html>
