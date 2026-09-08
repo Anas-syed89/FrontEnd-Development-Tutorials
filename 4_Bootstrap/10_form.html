@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <title>Forms-Bootstrap</title>
+</head>
+<body>
+    
+    <form class="p-5">
+        <label for="" class="form-label">Full Name:</label>
+        <input type="text" placeholder="Enter Name" class="form-control rounded-pill">
+        <div class="form-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse ex, corrupti ipsam sapiente dolorum incidunt fugiat cupiditate odit minima mollitia.
+        </div>
+        <label for="" class="form-label">Message:</label>
+        <textarea placeholder="Type Message..." class="form-control form-control-lg"></textarea>
+        <label for="" class="form-label">Disable Box:</label>
+        <input type="text" placeholder="You Cant Typed Here" class="form-control" disabled>
+        <label for="" class="form-label"></label>
+        <input type="text" class="form-control" readonly value="Hello! This is bootstrap Code">
+        <label for="" class="form-label">Choose File</label>
+        <input type="file" class="form-control">
+        <label for="" class="form-label">Choose Color</label>
+        <input type="color" class="form-control form-control-color">
+        <label for="" class="form-label">Data List:</label>
+        <input list="OptionsDatalist" placeholder="Type To Search" class="form-control">
+        <datalist id="OptionsDatalist">
+            <option value="Apple"></option>
+            <option value="Banana"></option>
+            <option value="Computer"></option>
+            <option value="AI"></option>
+        </datalist>
+        <label for="" class="form-label">Cars:</label>
+        <select class="form-select form-select-lg">
+            <option>Ferrari</option>
+            <option>Toyota</option>
+            <option>Honda</option>
+        </select>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input">
+            <label for="" class="form-check-label">Maths</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input">
+            <label for="" class="form-check-label">Physics</label>
+        </div>
+        <h1>Choose any one</h1>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" name="gender">
+            <label for="" class="form-check-label">Male</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" name="gender">
+            <label for="" class="form-check-label">Femail</label>
+        </div>
+        <h1>Switch Button</h1>
+        <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input"  role="switch">
+            <label for="">Off/On</label>
+        </div>
+       <input type="range" class="form-range">
+       <div class="input-group mt-3">
+        <span class="input-group-text">@</span>
+        <input type="text" placeholder="@example.com" class="form-control">
+       </div>
+       <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupFile01">Upload</label>
+            <input type="file" class="form-control" id="inputGroupFile01">
+        </div>
+        <div class="input-group mb-3">
+            <input type="file" class="form-control" id="inputGroupFile02">
+            <label class="input-group-text" for="inputGroupFile02">Upload</label>
+        </div>
+        <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Button</button>
+            <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+        </div>
+        <div class="input-group">
+            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button>
+        </div>
+
+        <!-- <label class="form-label mt-4">User Name:</label>
+        <input type="text" class="form-control" placeholder="Enter Name" required>
+        <button>Submit</button>
+         -->
+    </form>
+
+    <!-- new Form -->
+    <!-- Validation in bootstrap -->
+    <!-- needsvalidation-> bootstrap validation -->
+    <form class="p-5  needs-validation" novalidate>
+        <div>
+            <label for="" class="form-label">Full Name:</label>
+            <input type="text" class="form-control" placeholder="Enter Name" required>
+            <div class="valid-feedback">Every Thing is good.</div>
+        </div>
+        <input type="submit">
+    </form>
+    <div class="input-group"></div>
+    <script src="JS/bootstrap.min.js"></script>
+
+    <script>
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  });
+    </script>
+</body>
+</html>

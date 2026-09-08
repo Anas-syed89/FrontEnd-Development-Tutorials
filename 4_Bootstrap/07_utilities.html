@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <title>Utility Classes in Bootstrap</title>
+</head>
+<body>
+
+    <!-- Utilities in Bootstrap are small helper classes that quickly change the style of elements like spacing, color, text, or layout without writing CSS. -->
+
+    <div style="height: 100px;" class="bg-success"></div>
+    <br><br>
+    <div style="height: 100px;" class="bg-success bg-gradient"></div>
+
+    <br><br>
+    <!-- Opacity -->
+
+    <!-- with property -->
+     <div style="height: 100px; --bs-bg-opacity: .2;" class="bg-danger text-center h1">50% Opacity</div>
+    
+     <!-- with class -->
+
+     <div style="height: 100px;" class="bg-dark text-center h1 bg-opacity-50">50% Opacity</div>
+    <script src="JS/bootstrap.min.js"></script>
+
+    <!-- Borders -->
+    <!-- Additive-> means add border -->
+    <div style="height: 200px;" class="border border-warning border-2"></div>
+    <br>
+    <div style="height: 100px;" class="border-top border-info border-2"></div>
+
+    <!-- Subtractive-> means remove border -->
+    
+    <br>
+    <div style="height: 200px;" class="border border-danger border-2 border-top-0"></div>
+    <br>
+    <div style="height: 200px;" class="border border-start-0 border-dark border-2 border-opacity-50"></div>
+    
+    <!-- rounded borders -->
+    <br><br>
+    <div style="height: 100px; width: 100px;" class="border border-success border-3 rounded"></div>
+    <br><br>
+    <div style="height: 100px; width: 100px;" class="border border-success border-3 rounded-5"></div>
+    <br><br>
+    <div style="height: 100px; width: 100px;" class="border border-success border-3 rounded-circle"></div>
+    <br><br>
+    <div style="height: 100px; width: 100px;" class="border border-success border-3 rounded-start"></div>
+
+</body>
+</html>
